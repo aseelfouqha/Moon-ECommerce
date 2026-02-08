@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Moon</title>
+</head>
+<body>
+<!--Navbar-->
+  <header class="flex items-center justify-between px-10 py-6">
+
+    <!--Logo-->
+      <div class="flex items-center gap-2 font-semibold text-lg">
+      <img src="assets/Logo/logo (1).svg">
+    </div>
+
+    <!--Menu-->
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="#" class="hover:text-black">Home</a>
+      <a href="#" class="hover:text-black">Shop</a>
+      <a href="About.html" class="hover:text-black">About</a>
+      <a href="#" class="hover:text-black">Contact</a>
+    </nav>
+
+    <!--Icons-->
+    <div class="flex gap-4 text-gray-600">
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg"></a>
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Avatar.svg"></a>
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Heart.svg"></a>
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Shopping cart.svg"></a>
+    </div>
+  </header>
+
+<!--Hero Section-->
+<section
+  class="relative h-[600px] bg-cover bg-center"
+  style="background-image: url('./assets/Images/hero\ section.svg');"
+>
+
+  <!-- Offer Panel -->
+  <div
+    class="absolute top-0 left-[165px] h-full w-[360px]
+           bg-[#8b776b] text-white flex items-center"
+  >
+    <div class="px-10 w-full text-center">
+
+      <div class="flex justify-center mb-6">
+        <div class="w-14 h-14 flex items-center justify-center">
+          <img src="assets/Logo/Icon.svg">
+        </div>
+      </div>
+
+      <p class="text-sm opacity-80 mb-3">
+        Handcrafted in Viet Nam since 1650
+      </p>
+
+      <h1 class="text-3xl leading-snug mb-6 font-serif">
+        BAT TRANG <br /> DINNER SET
+      </h1>
+
+      <button class="w-50 h-10 bg-white text-black px-8 py-3 text-sm hover:bg-black hover:text-white transition-colors duration-300"">
+        SHOP NOW
+      </button>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!--Category Section-->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+    <!-- Card 1 -->
+    <div class="group cursor-pointer place-items-center">
+      <img src="assets/Images/Tableware.svg" alt="Tableware"
+           class="w-50 h-50 object-cover rounded-md mb-4">
+      <p class="text-sm font-semibold tracking-wide">TABLEWARE</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="group cursor-pointer place-items-center">
+      <img src="assets/Images/Home Decor.svg" alt="Home Decor"
+           class="w-50 h-50 object-cover rounded-md mb-4">
+      <p class="text-sm font-semibold tracking-wide">HOME DECOR</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group cursor-pointer place-items-center">
+      <img src="assets/Images/Holidays.svg" alt="Holiday"
+           class="w-50 h-50 object-cover rounded-md mb-4">
+      <p class="text-sm font-semibold tracking-wide">HOLIDAY</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="group cursor-pointer place-items-center">
+      <img src="assets/Images/Collection.svg" alt="Collection"
+           class="w-50 h-50 object-cover rounded-md mb-4">
+      <p class="text-sm font-semibold tracking-wide">COLLECTION</p>
+    </div>
+
+  </div>
+</section>
+
+<!--Promo Section-->
+<section class="max-w-7xl mx-auto px-6 py-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50 rounded-lg overflow-hidden">
+
+    <!-- Left Content -->
+    <div class="p-10 text-center">
+      <h2 class="text-2xl font-semibold mb-4">
+        UP TO 40% OFF OUR <br>
+        CHRISTMAS COLLECTION
+      </h2>
+
+      <p class="text-gray-600 mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore.
+      </p>
+
+      <a href="#"
+         class="inline-block underline px-6 py-3 text-sm font-semibold hover:bg-black hover:text-white transition">
+        SHOP NOW
+      </a>
+    </div>
+
+    <!-- Right Image -->
+    <div>
+      <img src="assets/Images/chrismax.svg"
+           alt="Christmas Collection"
+           class="w-full h-full object-cover">
+    </div>
+
+  </div>
+</section>
+
+
+<!--Best Seller  Section-->
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <!-- Section Title -->
+  <h2 class="text-center text-2xl font-serif tracking-widest mb-14">
+    BEST SELLERS
+  </h2>
+
+  <!-- Products Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-20">
+    
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/smallECUR.svg"
+        alt="Small Ecru Ceramic Compote"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Small Ecru Ceramic Compote
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/WARRICK.svg"
+        alt="Warrick White Vase 14"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Warrick White Vase 14"
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/PORCELAIN.svg"
+        alt="Porcelain Dinner Plate"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Porcelain Dinner Plate
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/Warrick White Vase.svg"
+        alt="Warrick White Vase 20"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Warrick White Vase 20
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/Rounded.svg"
+        alt="Rounded Dual Handled Vase"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Warrick White Vase 20
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/Marin.svg"
+        alt="Marin white dinner Plate"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Warrick White Vase 20
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/TALL.svg"
+        alt="Tall cream ceramic vase"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Warrick White Vase 20
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+    <!-- Product Card -->
+    <div class="text-center">
+      <img
+        src="assets/Images/LUANA.svg"
+        alt="Luana bowl"
+        class="mb-6 w-full object-cover"
+      />
+      <h3 class="text-sm font-semibold tracking-wide uppercase">
+        Warrick White Vase 20
+      </h3>
+      <p class="mt-1 font-medium">$49.00</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu.
+      </p>
+      <button
+        class="mt-6 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition"
+      >
+        ADD TO CART
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!--Collage section-->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2">
+
+    <!-- Text Block -->
+    <div class="flex items-center justify-center bg-[#faf9f7] p-12 min-h-[420px]">
+      <div class="max-w-md text-center">
+        <h2 class="text-3xl font-serif tracking-widest mb-6">
+          MADE IN VIET NAM<br />SINCE 1450
+        </h2>
+        <p class="text-gray-500 mb-8">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
+        </p>
+        <a class="text-sm tracking-widest border-b border-gray-800">
+          LEAR MORE
+        </a>
+      </div>
+    </div>
+
+    <!-- Image Block -->
+    <div class="max-h-[420px]">
+      <img
+        src="./assets/Images/collage 1.svg"
+        class="w-full h-full object-cover"
+        alt=""
+      />
+    </div>
+
+    <!-- Image Block -->
+    <div class="max-h-[420px]">
+      <img
+        src="./assets/Images/pottery-wheel-process_600x600 1.svg"
+        class="w-full h-full object-cover"
+        alt=""
+      />
+    </div>
+
+    <!-- Text Block -->
+    <div class="flex items-center justify-center bg-[#faf9f7] p-12 min-h-[420px]">
+      <div class="max-w-md text-center">
+        <h2 class="text-3xl font-serif tracking-widest mb-6">
+          OUR HISTORY
+        </h2>
+        <p class="text-gray-500 mb-8">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis sit aliquam sit.
+        </p>
+        <a class="text-sm tracking-widest border-b border-gray-800">
+          LEAR MORE
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <!--New Arrival Section--> 
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <!-- Section Title -->
+  <h2 class="text-center text-2xl md:text-3xl font-serif tracking-wide text-gray-800 mb-14">
+    DISCOVER NEW ARRIVALS
+  </h2>
+
+  <!-- Products Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    
+    <!-- Card 1 -->
+    <div class="flex flex-col">
+      <div class="bg-gray-100 aspect-square flex items-center justify-center mb-6">
+        <img src="./assets/Images/porcline.svg" alt="Porcelain Dinner Plate" class="object-contain">
+      </div>
+
+      <h3 class="text-sm font-semibold tracking-wider text-gray-800 uppercase">
+        Porcelain Dinner Plate
+      </h3>
+      <p class="text-sm font-medium text-gray-700 mt-1">$49.00</p>
+      <p class="text-sm text-gray-500 mt-3">
+        Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.
+      </p>
+
+      <button class="mt-6 border border-gray-800 py-3 text-xs tracking-widest uppercase hover:bg-gray-800 hover:text-white transition">
+        Add to cart
+      </button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex flex-col">
+      <div class="bg-gray-100 aspect-square flex items-center justify-center mb-6">
+        <img src="./assets/Images/valo-matte-white-vase.svg" alt="Ophelia Matte Natural Vase" class="object-contain">
+      </div>
+
+      <h3 class="text-sm font-semibold tracking-wider text-gray-800 uppercase">
+        Ophelia Matte Natural Vase
+      </h3>
+      <p class="text-sm font-medium text-gray-700 mt-1">$49.00</p>
+      <p class="text-sm text-gray-500 mt-3">
+        Lorem ipsum dolor sit amet conse bolli tetur.
+      </p>
+
+      <button class="mt-6 border border-gray-800 py-3 text-xs tracking-widest uppercase hover:bg-gray-800 hover:text-white transition">
+        Add to cart
+      </button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flex flex-col">
+      <div class="bg-gray-100 aspect-square flex items-center justify-center mb-6">
+        <img src="./assets/Images/julo-blue-salad-plate.svg" alt="Porcelain Dinner Plate" class="object-contain">
+      </div>
+
+      <h3 class="text-sm font-semibold tracking-wider text-gray-800 uppercase">
+        Porcelain Dinner Plate
+      </h3>
+      <p class="text-sm font-medium text-gray-700 mt-1">$49.00</p>
+      <p class="text-sm text-gray-500 mt-3">
+        Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.
+      </p>
+
+      <button class="mt-6 border border-gray-800 py-3 text-xs tracking-widest uppercase hover:bg-gray-800 hover:text-white transition">
+        Add to cart
+      </button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flex flex-col">
+      <div class="bg-gray-100 aspect-square flex items-center justify-center mb-6">
+        <img src="./assets/Images/mercer-black-rim-bowl.svg" alt="Luana Bowl" class="object-contain">
+      </div>
+
+      <h3 class="text-sm font-semibold tracking-wider text-gray-800 uppercase">
+        Luana Bowl
+      </h3>
+      <p class="text-sm font-medium text-gray-700 mt-1">$49.00</p>
+      <p class="text-sm text-gray-500 mt-3">
+        Lorem ipsum dolor sit amet conse.
+      </p>
+
+      <button class="mt-6 border border-gray-800 py-3 text-xs tracking-widest uppercase hover:bg-gray-800 hover:text-white transition">
+        Add to cart
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!--blog Section-->    
+<section class="max-w-7xl mx-auto px-4 py-20">
+  <!-- Section Title -->
+  <h2 class="text-center text-2xl font-serif tracking-widest text-gray-700 mb-16">
+    OUR BLOG
+  </h2>
+
+  <!-- Blog Card -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 bg-[#FAF9F7] overflow-hidden">
+    
+    <!-- Text Content -->
+    <div class="flex flex-col items-center px-8 md:px-16 py-16 text-center lg:text-left">
+      <span class="text-sm tracking-widest text-gray-500 mb-4">
+        TABLEWARE
+      </span>
+
+      <h3 class="text-3xl md:text-4xl font-serif text-gray-800 leading-tight mb-6">
+        THE SECRETS TO A<br />KITCHEN ROOM
+      </h3>
+
+      <p class="text-gray-500 leading-relaxed max-w-md mx-auto lg:mx-0 mb-10">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit
+        phasellus mollis sit aliquam sit nullam neque ultrices.
+      </p>
+
+      <a
+        href="#"
+        class="inline-block text-sm tracking-widest font-medium text-gray-700 underline underline-offset-8 hover:text-gray-900 transition"
+      >
+        READ MORE
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div class="h-full">
+      <img
+        src="./assets/Images/blog photo.svg"
+        alt="Tableware Blog"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
+
+<!--Newsletter-->
+<section class="w-full py-24 flex items-center justify-center bg-white">
+  <div class="w-full max-w-xl text-center px-4">
+    
+    <!-- Small heading -->
+    <p class="text-sm tracking-wide text-gray-600 mb-4">
+      Sign up for emails
+    </p>
+
+    <!-- Main heading -->
+    <h2 class="text-2xl md:text-3xl font-serif tracking-widest text-gray-800 mb-10">
+      FOR NEWS, COLLECTIONS &amp; MORE
+    </h2>
+
+    <!-- Form -->
+    <form class="flex flex-col items-center gap-10">
+      
+      <!-- Email input -->
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        class="w-full bg-transparent border-b border-gray-400 text-center text-sm py-2 focus:outline-none focus:border-gray-800 placeholder-gray-500"
+      />
+
+      <!-- Button -->
+      <button
+        type="submit"
+        class="px-8 py-3 border border-gray-700 text-xs tracking-widest text-gray-800 hover:bg-gray-800 hover:text-white transition-colors duration-300"
+      >
+        SIGN UP
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<!--Footer Section-->
+<footer class="bg-[#3f3e4b] text-gray-300">
+  <!-- Top section -->
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+      <!-- Left side -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-3">
+          <img src="./assets/Logo/logo white.svg">
+        </div>
+
+        <p class="max-w-md text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+        </p>
+
+        <a
+          href="#"
+          class="inline-flex items-center gap-2 border border-gray-400 px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#3f3e4b] transition"
+        >
+          Get Started
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Right side -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        
+        <!-- About Us -->
+        <div>
+          <h4 class="mb-4 text-sm font-semibold text-white uppercase">
+            About Us
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white">Mission</a></li>
+            <li><a href="#" class="hover:text-white">Our team</a></li>
+            <li><a href="#" class="hover:text-white">Awards</a></li>
+            <li><a href="#" class="hover:text-white">Testimonials</a></li>
+            <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="mb-4 text-sm font-semibold text-white uppercase">
+            Services
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white">Web design</a></li>
+            <li><a href="#" class="hover:text-white">Web development</a></li>
+            <li><a href="#" class="hover:text-white">Mobile design</a></li>
+            <li><a href="#" class="hover:text-white">UI/UX design</a></li>
+            <li><a href="#" class="hover:text-white">Branding design</a></li>
+          </ul>
+        </div>
+
+        <!-- Portfolio -->
+        <div>
+          <h4 class="mb-4 text-sm font-semibold text-white uppercase">
+            Portfolio
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white">Corporate websites</a></li>
+            <li><a href="#" class="hover:text-white">E-commerce</a></li>
+            <li><a href="#" class="hover:text-white">Mobile apps</a></li>
+            <li><a href="#" class="hover:text-white">Landing pages</a></li>
+            <li><a href="#" class="hover:text-white">UI/UX projects</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-gray-500/40"></div>
+
+  <!-- Bottom bar -->
+  <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-400">
+    Copyright © 2023 Moon | All Rights Reserved |
+    <a href="#" class="hover:text-white underline underline-offset-2">Terms and Conditions</a>
+    |
+    <a href="#" class="hover:text-white underline underline-offset-2">Privacy Policy</a>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
