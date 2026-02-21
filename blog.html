@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Blog - Moon</title>
+</head>
+<body>
+  <!--Navbar-->
+  <header class="flex items-center justify-between px-10 py-6">
+    <!--Logo-->
+    <div class="flex items-center gap-2 font-semibold text-lg">
+      <img src="assets/Logo/logo (1).svg">
+    </div>
+
+    <!--Menu-->
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="index.html" class="hover:text-black">Home</a>
+      <a href="#" class="hover:text-black">Shop</a>
+      <a href="About.html" class="hover:text-black">About</a>
+      <a href="Contact.html" class="hover:text-black">Contact</a>
+    </nav>
+
+    <!--Icons-->
+    <div class="flex gap-4 text-gray-600">
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg"></a>
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Avatar.svg"></a>
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Heart.svg"></a>
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Shopping cart.svg"></a>
+    </div>
+  </header>
+
+  <!--Hero Section-->
+  <section class="relative w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <!-- Left Column - Image -->
+      <div class="h-[500px] lg:h-[600px]">
+        <img 
+          src="./assets/Images/hero-blog.webp" 
+          alt="Garden Set"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Right Column - Content -->
+      <div class="bg-[#FAF9F7] flex items-center justify-center p-12 lg:p-16 relative">
+        <div class="max-w-md">
+          <h1 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6 uppercase tracking-wide">
+            WHAT'S IN A GARDEN SET?
+          </h1>
+          <p class="text-gray-600 leading-relaxed mb-8 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          </p>
+        </div>
+        <!-- Navigation Arrow -->
+        <div class="absolute right-8 top-1/2 -translate-y-1/2 hidden lg:block">
+          <button class="w-12 h-12 rounded-full bg-white border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
+            <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Main Content Area-->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      
+      <!-- Left Column - Blog Posts -->
+      <div class="lg:col-span-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Blog Post 1 -->
+          <article class="bg-white">
+            <div class="mb-4">
+              <img 
+                src="./assets/Images/how-can-i-use cermaic.webp" 
+                alt="Ceramic Collection"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Brian Clark</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Jan 24, 2024</span>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">
+              How Can I Use Ceramic When I Decorate?
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </article>
+
+          <!-- Blog Post 2 -->
+          <article class="bg-white">
+            <div class="mb-4">
+              <img 
+                src="./assets/Images/secrets-to-a-living-room-set.webp" 
+                alt="Living Room Set"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Brian Clark</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Jan 24, 2024</span>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">
+              The secrets to a Living Room set?
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </article>
+
+          <!-- Blog Post 3 -->
+          <article class="bg-white">
+            <div class="mb-4">
+              <img 
+                src="./assets/Images/how-to-style-a-beatuiful-house.webp" 
+                alt="Pottery Process"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Brian Clark</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Jan 24, 2024</span>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">
+              How to Style a Beautiful House
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </article>
+
+          <!-- Blog Post 4 -->
+          <article class="bg-white">
+            <div class="mb-4">
+              <img 
+                src="./assets/Images/choclate clementine.webp" 
+                alt="Table Setting"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Brian Clark</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Jan 24, 2024</span>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">
+              Chocolate Clementine Cake Recipe
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </article>
+
+          <!-- Blog Post 5 -->
+          <article class="bg-white">
+            <div class="mb-4">
+              <img 
+                src="./assets/Images/holiday-food.webp" 
+                alt="Holiday Traditions"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Brian Clark</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Jan 24, 2024</span>
+              </div>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">
+              Holiday Food Traditions With Moon Family
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-center gap-2 mt-12">
+          <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-800">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="w-8 h-8 flex items-center justify-center bg-gray-800 text-white text-sm font-medium">1</button>
+          <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-800 text-sm font-medium">2</button>
+          <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-800 text-sm font-medium">3</button>
+          <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-800 text-sm font-medium">4</button>
+          <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-800">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column - Sidebar -->
+      <aside class="lg:col-span-1">
+        <div class="space-y-10">
+          
+          <!-- Search Bar -->
+          <div>
+            <div class="relative">
+              <input 
+                type="text" 
+                placeholder="Search for product..."
+                class="w-full border border-gray-300 px-4 py-3 pl-10 text-sm focus:outline-none focus:border-gray-600"
+              />
+              <svg class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Popular Posts -->
+          <div>
+            <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-6">
+              POPULAR POSTS
+            </h3>
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <img 
+                  src="./assets/Images/hero-blog.webp" 
+                  alt="Popular Post"
+                  class="w-20 h-20 object-cover flex-shrink-0"
+                />
+                <div class="flex-1">
+                  <h4 class="text-sm font-medium text-gray-800 hover:text-gray-600 cursor-pointer">
+                    What's in a Garden set?
+                  </h4>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <img 
+                  src="./assets/Images/how-can-i-use cermaic.webp" 
+                  alt="Popular Post"
+                  class="w-20 h-20 object-cover flex-shrink-0"
+                />
+                <div class="flex-1">
+                  <h4 class="text-sm font-medium text-gray-800 hover:text-gray-600 cursor-pointer">
+                    The secrets to a Living Room set?
+                  </h4>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <img 
+                  src="./assets/Images/secrets-to-a-living-room-set.webp" 
+                  alt="Popular Post"
+                  class="w-20 h-20 object-cover flex-shrink-0"
+                />
+                <div class="flex-1">
+                  <h4 class="text-sm font-medium text-gray-800 hover:text-gray-600 cursor-pointer">
+                    How Can I Use Ceramic When I Decorate?
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories -->
+          <div>
+            <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-6">
+              CATEGORIES
+            </h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-800">
+                  Dinnerware <span class="text-gray-400">(3)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-800">
+                  Ceramic <span class="text-gray-400">(5)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-800">
+                  Furniture <span class="text-gray-400">(7)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-800">
+                  Decor Art <span class="text-gray-400">(2)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-800">
+                  Gifts sets <span class="text-gray-400">(8)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tags -->
+          <div>
+            <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-6">
+              TAGS POST
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="#" class="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-100 rounded">
+                Ceramic
+              </a>
+              <a href="#" class="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-100 rounded">
+                Kitchen
+              </a>
+              <a href="#" class="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-100 rounded">
+                Gifts sets
+              </a>
+              <a href="#" class="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-100 rounded">
+                Lamp
+              </a>
+              <a href="#" class="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-100 rounded">
+                Flower vase
+              </a>
+              <a href="#" class="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-100 rounded">
+                Plate
+              </a>
+              <a href="#" class="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-100 rounded">
+                Kitchen
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!--Footer Section-->
+  <footer class="bg-[#3f3e4b] text-gray-300">
+    <!-- Top section -->
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        
+        <!-- Column 1 - Branding -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Logo/logo white.svg">
+          </div>
+          <p class="max-w-md text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center gap-2 border border-gray-400 px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#3f3e4b] transition"
+          >
+            Get Started
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Column 2 - About Us -->
+        <div>
+          <h4 class="mb-4 text-sm font-semibold text-white uppercase">
+            About Us
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white">Mission</a></li>
+            <li><a href="#" class="hover:text-white">Our team</a></li>
+            <li><a href="#" class="hover:text-white">Awards</a></li>
+            <li><a href="#" class="hover:text-white">Testimonials</a></li>
+            <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 - Services -->
+        <div>
+          <h4 class="mb-4 text-sm font-semibold text-white uppercase">
+            Services
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white">Web design</a></li>
+            <li><a href="#" class="hover:text-white">Web development</a></li>
+            <li><a href="#" class="hover:text-white">Mobile design</a></li>
+            <li><a href="#" class="hover:text-white">UI/UX design</a></li>
+            <li><a href="#" class="hover:text-white">Branding design</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 - Portfolio -->
+        <div>
+          <h4 class="mb-4 text-sm font-semibold text-white uppercase">
+            Portfolio
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white">Corporate websites</a></li>
+            <li><a href="#" class="hover:text-white">E-commerce</a></li>
+            <li><a href="#" class="hover:text-white">Mobile apps</a></li>
+            <li><a href="#" class="hover:text-white">Landing pages</a></li>
+            <li><a href="#" class="hover:text-white">UI/UX projects</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-500/40"></div>
+
+    <!-- Bottom bar -->
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-400">
+      Copyright © 2023 Moon | All Rights Reserved |
+      <a href="#" class="hover:text-white underline underline-offset-2">Terms and Conditions</a>
+      |
+      <a href="#" class="hover:text-white underline underline-offset-2">Privacy Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
