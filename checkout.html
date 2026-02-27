@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Checkout - Moon</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-10 py-6">
+    <div class="flex items-center gap-2 font-semibold text-lg">
+      <img src="assets/Logo/logo (1).svg" alt="Moon">
+    </div>
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="index.html" class="hover:text-black">Home</a>
+      <a href="shop.html" class="hover:text-black">Shop</a>
+      <a href="About.html" class="hover:text-black">About</a>
+      <a href="Contact.html" class="hover:text-black">Contact</a>
+    </nav>
+    <div class="flex gap-4 text-gray-600">
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg" alt="Search"></a>
+      <a class="hover:text-black" href="account.html"><img src="assets/Icons/Avatar.svg" alt="Profile"></a>
+      <a class="hover:text-black" href="wishlist.html"><img src="assets/Icons/Heart.svg" alt="Wishlist"></a>
+      <a class="hover:text-black" href="cart.html"><img src="assets/Icons/Shopping cart.svg" alt="Cart"></a>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="text-sm text-gray-500">
+      <a href="#" class="hover:text-gray-800">Cart</a>
+      <span class="mx-2">/</span>
+      <a href="#" class="hover:text-gray-800">Shipping</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 font-medium">Payment</span>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <section class="max-w-7xl mx-auto px-6 py-12 pb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      
+      <!-- Left Column: Billing Details -->
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-8">Billing Details</h2>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col">
+              <label class="mb-2 text-sm font-medium text-gray-700">First Name <span class="text-red-500">*</span></label>
+              <input type="text" value="Samatha Clarken" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+            </div>
+            <div class="flex flex-col">
+              <label class="mb-2 text-sm font-medium text-gray-700">Last Name <span class="text-red-500">*</span></label>
+              <input type="text" value="Clarken" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-2 text-sm font-medium text-gray-700">Company</label>
+            <input type="text" value="Moon" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-2 text-sm font-medium text-gray-700">Country / Region <span class="text-red-500">*</span></label>
+            <select class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent bg-white">
+              <option>United States</option>
+            </select>
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-2 text-sm font-medium text-gray-700">Street address <span class="text-red-500">*</span></label>
+            <input type="text" value="Address" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col">
+              <label class="mb-2 text-sm font-medium text-gray-700">Town / City <span class="text-red-500">*</span></label>
+              <input type="text" value="City" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+            </div>
+            <div class="flex flex-col">
+              <label class="mb-2 text-sm font-medium text-gray-700">State <span class="text-red-500">*</span></label>
+              <select class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent bg-white">
+                <option>State</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-2 text-sm font-medium text-gray-700">ZIP Code</label>
+            <input type="text" value="Zip code" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col">
+              <label class="mb-2 text-sm font-medium text-gray-700">Phone <span class="text-red-500">*</span></label>
+              <input type="tel" value="(123) 456 - 7890" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+            </div>
+            <div class="flex flex-col">
+              <label class="mb-2 text-sm font-medium text-gray-700">Email</label>
+              <input type="email" value="example@youremail.com" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" />
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-2 text-sm font-medium text-gray-700">Order notes</label>
+            <textarea rows="4" placeholder="Type your message here..." class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent resize-none"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Column: Product & Payment -->
+      <div class="lg:col-span-1 space-y-8">
+        
+        <!-- Product Summary -->
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-lg font-semibold text-gray-800">Product</h3>
+            <h3 class="text-lg font-semibold text-gray-800">Subtotal</h3>
+          </div>
+          <ul class="space-y-4 border-b border-gray-200 pb-6">
+            <li class="flex justify-between text-sm">
+              <span class="text-gray-700">Porcelain Dinner Plate (27cm)</span>
+              <span class="font-medium">$59.00</span>
+            </li>
+            <li class="flex justify-between text-sm">
+              <span class="text-gray-700">Ophelia Matte Natural Vase</span>
+              <span class="font-medium">$168.00</span>
+            </li>
+            <li class="flex justify-between text-sm">
+              <span class="text-gray-700">Luana Bowl</span>
+              <span class="font-medium">$248.00</span>
+            </li>
+          </ul>
+          <div class="space-y-2 pt-4">
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-600">Subtotal</span>
+              <span class="font-medium">$475.00</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-600">Shipping</span>
+              <span class="font-medium">$15.00</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-center pt-4 border-t border-gray-200 mt-4">
+            <span class="text-lg font-semibold text-gray-800">Total</span>
+            <span class="text-xl font-bold text-gray-900">$490.00</span>
+          </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="bg-[#3f3e4b] text-white rounded-lg overflow-hidden">
+          <h3 class="text-lg font-semibold px-6 py-4 border-b border-gray-500/40">Payment</h3>
+          <div class="p-6 space-y-6">
+            <!-- Payment Method -->
+            <div class="space-y-4">
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="payment" checked class="w-4 h-4 accent-gray-400">
+                <span class="font-medium">Credit card</span>
+                <span class="flex gap-2 ml-2">
+                  <span class="text-xs px-2 py-0.5 bg-white/20 rounded">VISA</span>
+                  <span class="text-xs px-2 py-0.5 bg-white/20 rounded">MC</span>
+                  <span class="text-xs px-2 py-0.5 bg-white/20 rounded">Amex</span>
+                </span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="radio" name="payment" class="w-4 h-4 accent-gray-400">
+                <span class="font-medium">PayPal</span>
+                <span class="text-sm text-gray-400">Pay with PayPal</span>
+              </label>
+            </div>
+            <!-- Credit Card Form -->
+            <div class="space-y-4 pt-2">
+              <div class="flex flex-col">
+                <label class="mb-2 text-sm text-gray-300">Card number</label>
+                <input type="text" placeholder="1234 5678 9012 3456" class="w-full bg-white/10 border border-gray-500 rounded px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+              </div>
+              <div class="flex flex-col">
+                <label class="mb-2 text-sm text-gray-300">Name on card</label>
+                <input type="text" placeholder="Name" class="w-full bg-white/10 border border-gray-500 rounded px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-col">
+                  <label class="mb-2 text-sm text-gray-300">Expiration date (MM/YY)</label>
+                  <input type="text" placeholder="MM/YY" class="w-full bg-white/10 border border-gray-500 rounded px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+                </div>
+                <div class="flex flex-col">
+                  <label class="mb-2 text-sm text-gray-300">Security code</label>
+                  <input type="text" placeholder="CVC" class="w-full bg-white/10 border border-gray-500 rounded px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold py-4 uppercase tracking-wide transition">
+              Place Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 pt-8 border-t border-gray-200">
+      <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-gray-900 text-sm font-medium">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        Return to Cart
+      </a>
+      <a href="#" class="inline-flex items-center gap-2 bg-[#3f3e4b] hover:bg-gray-800 text-white px-8 py-3 text-sm font-semibold uppercase tracking-wide transition">
+        Continue to Shipping
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3f3e4b] text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Logo/logo white.svg" alt="Moon">
+          </div>
+          <p class="max-w-md text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 border border-gray-400 px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#3f3e4b] transition">
+            Get Started
+            <span>→</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">About Us</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Mission</a></li>
+              <li><a href="#" class="hover:text-white">Our team</a></li>
+              <li><a href="#" class="hover:text-white">Awards</a></li>
+              <li><a href="#" class="hover:text-white">Testimonials</a></li>
+              <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Services</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Web design</a></li>
+              <li><a href="#" class="hover:text-white">Web development</a></li>
+              <li><a href="#" class="hover:text-white">Mobile design</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX design</a></li>
+              <li><a href="#" class="hover:text-white">Branding design</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Portfolio</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Corporate websites</a></li>
+              <li><a href="#" class="hover:text-white">E-commerce</a></li>
+              <li><a href="#" class="hover:text-white">Mobile apps</a></li>
+              <li><a href="#" class="hover:text-white">Landing pages</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-500/40"></div>
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-400">
+      Copyright © 2023 Moon | All Rights Reserved |
+      <a href="#" class="hover:text-white underline underline-offset-2">Terms and Conditions</a>
+      |
+      <a href="#" class="hover:text-white underline underline-offset-2">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
