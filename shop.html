@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Shop - Moon</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-10 py-6">
+    <div class="flex items-center gap-2 font-semibold text-lg">
+      <img src="assets/Logo/logo (1).svg" alt="Moon">
+    </div>
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="index.html" class="hover:text-black">Home</a>
+      <a href="shop.html" class="text-black font-medium">Shop</a>
+      <a href="About.html" class="hover:text-black">About</a>
+      <a href="Contact.html" class="hover:text-black">Contact</a>
+    </nav>
+    <div class="flex gap-4 text-gray-600">
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg" alt="Search"></a>
+      <a class="hover:text-black" href="account.html"><img src="assets/Icons/Avatar.svg" alt="Profile"></a>
+      <a class="hover:text-black" href="wishlist.html"><img src="assets/Icons/Heart.svg" alt="Wishlist"></a>
+      <a class="hover:text-black" href="cart.html"><img src="assets/Icons/Shopping cart.svg" alt="Cart"></a>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="text-sm text-gray-500">
+      <a href="index.html" class="hover:text-gray-800">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 font-medium">Shop</span>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <section class="max-w-7xl mx-auto px-6 py-8 pb-20">
+    <p class="text-sm text-gray-600 mb-8">Showing 120 items</p>
+
+    <div class="flex flex-col lg:flex-row gap-12">
+      
+      <!-- Left Sidebar - Filters -->
+      <aside class="lg:w-64 flex-shrink-0 space-y-10">
+        <!-- Category -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-4">Category</h3>
+          <ul class="space-y-3">
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Dinnerware</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Ceramic</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Furniture</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Decor Art</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Gifts sets</label></li>
+          </ul>
+        </div>
+
+        <!-- Price Range -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-4">Price Range</h3>
+          <ul class="space-y-3">
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> $0 - $10</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> $10 - $50</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> $50 - $100</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> $100 - $200</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> &gt; $200</label></li>
+          </ul>
+        </div>
+
+        <!-- Color -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-4">Color</h3>
+          <div class="flex flex-wrap gap-2">
+            <button class="w-8 h-8 rounded-full border-2 border-gray-300 bg-[#e8d5c4] hover:border-gray-600 transition" title="Light brown"></button>
+            <button class="w-8 h-8 rounded-full border-2 border-gray-300 bg-[#6b4423] hover:border-gray-600 transition" title="Dark brown"></button>
+            <button class="w-8 h-8 rounded-full border-2 border-gray-300 bg-red-400 hover:border-gray-600 transition" title="Red"></button>
+            <button class="w-8 h-8 rounded-full border-2 border-gray-300 bg-red-800 hover:border-gray-600 transition" title="Dark red"></button>
+            <button class="w-8 h-8 rounded-full border-2 border-gray-300 bg-purple-400 hover:border-gray-600 transition" title="Purple"></button>
+            <button class="w-8 h-8 rounded-full border-2 border-gray-300 bg-gray-400 hover:border-gray-600 transition" title="Gray"></button>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-4">Tags</h3>
+          <ul class="space-y-3">
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Dinnerware</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Ceramic</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Furniture</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Decor Art</label></li>
+            <li><label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-gray-800"><input type="checkbox" class="rounded border-gray-400"> Gifts sets</label></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Right - Product Grid -->
+      <div class="flex-1 min-w-0">
+        <!-- Sort By -->
+        <div class="flex justify-end mb-6">
+          <select class="text-sm border border-gray-300 rounded px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <option>Sort by: Name</option>
+            <option>Sort by: Price</option>
+            <option>Sort by: Newest</option>
+          </select>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/smallECUR.webp" alt="Small Ecru Ceramic Compote" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Small Ecru Ceramic Compote</h3>
+            <p class="mt-1 font-medium text-gray-700">$49.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/PORCELAIN.webp" alt="Porcelain Dinner Plate" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Porcelain Dinner Plate</h3>
+            <p class="mt-1 font-medium text-gray-700">$68.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/WARRICK.webp" alt="Warrick White Vase 20" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Warrick White Vase 20"</h3>
+            <p class="mt-1 font-medium text-gray-700">$49.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/white werrick vase.webp" alt="Warrick White Vase" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Warrick White Vase 14"</h3>
+            <p class="mt-1 font-medium text-gray-700">$59.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/Rounded.webp" alt="Rounded Dual Handled Vase" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Rounded Dual Handled Vase</h3>
+            <p class="mt-1 font-medium text-gray-700">$49.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <a href="product.html" class="block">
+              <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+                <img src="assets/Images/Marin.webp" alt="Marin White Dinner Plate" class="w-full h-full object-contain p-4">
+              </div>
+              <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800 hover:underline">Marin White Dinner Plate</h3>
+            </a>
+            <p class="mt-1 font-medium text-gray-700">$49.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/TALL.webp" alt="Tall Cream Ceramic Vase" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Tall Cream Ceramic Vase</h3>
+            <p class="mt-1 font-medium text-gray-700">$79.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/LUANA.webp" alt="Luana Bowl" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Luana Bowl</h3>
+            <p class="mt-1 font-medium text-gray-700">$49.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-gray-100 aspect-square flex items-center justify-center mb-4">
+              <img src="assets/Images/porcline.webp" alt="Porcelain Bowl" class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-sm font-semibold tracking-wide uppercase text-gray-800">Porcelain Ceramic Bowl</h3>
+            <p class="mt-1 font-medium text-gray-700">$59.00</p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet conse boli tetur adipiscing elit.</p>
+            <button class="mt-4 w-full border border-gray-700 py-3 text-sm tracking-widest hover:bg-gray-900 hover:text-white transition">ADD TO CART</button>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-end items-center gap-2 mt-12">
+          <button class="w-9 h-9 flex items-center justify-center text-gray-500 hover:text-gray-800 border border-gray-300 rounded">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="w-9 h-9 flex items-center justify-center text-sm font-medium text-gray-500 hover:text-gray-800 border border-gray-300 rounded">1</button>
+          <button class="w-9 h-9 flex items-center justify-center text-sm font-medium bg-gray-900 text-white border border-gray-900 rounded">2</button>
+          <button class="w-9 h-9 flex items-center justify-center text-sm font-medium text-gray-500 hover:text-gray-800 border border-gray-300 rounded">3</button>
+          <button class="w-9 h-9 flex items-center justify-center text-sm font-medium text-gray-500 hover:text-gray-800 border border-gray-300 rounded">4</button>
+          <button class="w-9 h-9 flex items-center justify-center text-gray-500 hover:text-gray-800 border border-gray-300 rounded">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3f3e4b] text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Logo/logo white.svg" alt="Moon">
+          </div>
+          <p class="max-w-md text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 border border-gray-400 px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#3f3e4b] transition">
+            Get Started
+            <span>→</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">About Us</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Mission</a></li>
+              <li><a href="#" class="hover:text-white">Our team</a></li>
+              <li><a href="#" class="hover:text-white">Awards</a></li>
+              <li><a href="#" class="hover:text-white">Testimonials</a></li>
+              <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Services</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Web design</a></li>
+              <li><a href="#" class="hover:text-white">Web development</a></li>
+              <li><a href="#" class="hover:text-white">Mobile design</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX design</a></li>
+              <li><a href="#" class="hover:text-white">Branding design</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Portfolio</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Corporate websites</a></li>
+              <li><a href="#" class="hover:text-white">E-commerce</a></li>
+              <li><a href="#" class="hover:text-white">Mobile apps</a></li>
+              <li><a href="#" class="hover:text-white">Landing pages</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-500/40"></div>
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-400">
+      Copyright © 2023 Moon | All Rights Reserved |
+      <a href="#" class="hover:text-white underline underline-offset-2">Terms and Conditions</a>
+      |
+      <a href="#" class="hover:text-white underline underline-offset-2">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
