@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Account - Moon</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-10 py-6">
+    <a href="index.html" class="flex items-center gap-2 font-semibold text-lg">
+      <img src="assets/Logo/logo (1).svg" alt="Moon">
+    </a>
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="index.html" class="hover:text-black">Home</a>
+      <a href="shop.html" class="hover:text-black">Shop</a>
+      <a href="About.html" class="hover:text-black">About</a>
+      <a href="Contact.html" class="hover:text-black">Contact</a>
+    </nav>
+    <div class="flex gap-4 text-gray-600">
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg" alt="Search"></a>
+      <a class="hover:text-black" href="account.html"><img src="assets/Icons/Avatar.svg" alt="Account"></a>
+      <a class="hover:text-black" href="wishlist.html"><img src="assets/Icons/Heart.svg" alt="Wishlist"></a>
+      <a class="hover:text-black" href="cart.html"><img src="assets/Icons/Shopping cart.svg" alt="Cart"></a>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="text-sm text-gray-500">
+      <a href="index.html" class="hover:text-gray-800">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 font-medium">My Account</span>
+    </nav>
+  </div>
+
+  <!-- Account Section -->
+  <section class="max-w-7xl mx-auto px-6 py-12 pb-20">
+    <div class="flex flex-col lg:flex-row gap-12">
+      
+      <!-- Sidebar Navigation -->
+      <aside class="lg:w-64 flex-shrink-0">
+        <div class="bg-gray-50 rounded-lg p-6 space-y-1">
+          <a href="account.html" class="block py-3 px-4 bg-gray-900 text-white text-sm font-medium rounded">Dashboard</a>
+          <a href="account.html#orders" class="block py-3 px-4 text-gray-600 hover:bg-gray-100 hover:text-gray-900 text-sm rounded transition">Orders</a>
+          <a href="account.html#addresses" class="block py-3 px-4 text-gray-600 hover:bg-gray-100 hover:text-gray-900 text-sm rounded transition">Addresses</a>
+          <a href="account.html#details" class="block py-3 px-4 text-gray-600 hover:bg-gray-100 hover:text-gray-900 text-sm rounded transition">Account Details</a>
+          <a href="signin.html" class="block py-3 px-4 text-gray-600 hover:bg-gray-100 hover:text-gray-900 text-sm rounded transition">Sign Out</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 min-w-0">
+        <!-- Welcome -->
+        <div class="mb-10">
+          <h1 class="text-2xl font-semibold text-gray-900 mb-2">Hello, John Doe</h1>
+          <p class="text-gray-600">From your account dashboard you can view your orders and manage your account details.</p>
+        </div>
+
+        <!-- Dashboard Overview -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-2">Total Orders</h3>
+            <p class="text-2xl font-bold text-gray-900">5</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide mb-2">Wishlist Items</h3>
+            <p class="text-2xl font-bold text-gray-900">3</p>
+          </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <div id="orders" class="mb-12">
+          <h2 class="text-lg font-semibold text-gray-900 mb-4">Recent Orders</h2>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <table class="w-full text-sm">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="text-left py-3 px-4 font-semibold text-gray-700">Order</th>
+                  <th class="text-left py-3 px-4 font-semibold text-gray-700">Date</th>
+                  <th class="text-left py-3 px-4 font-semibold text-gray-700">Status</th>
+                  <th class="text-right py-3 px-4 font-semibold text-gray-700">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-gray-200">
+                  <td class="py-3 px-4"><a href="#" class="text-gray-900 font-medium hover:underline">#1001</a></td>
+                  <td class="py-3 px-4 text-gray-600">Jan 15, 2024</td>
+                  <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Completed</span></td>
+                  <td class="py-3 px-4 text-right font-medium">$236.00</td>
+                </tr>
+                <tr class="border-t border-gray-200">
+                  <td class="py-3 px-4"><a href="#" class="text-gray-900 font-medium hover:underline">#1000</a></td>
+                  <td class="py-3 px-4 text-gray-600">Jan 10, 2024</td>
+                  <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Completed</span></td>
+                  <td class="py-3 px-4 text-right font-medium">$490.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Addresses -->
+        <div id="addresses" class="mb-12">
+          <h2 class="text-lg font-semibold text-gray-900 mb-4">Addresses</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="border border-gray-200 rounded-lg p-6">
+              <h3 class="text-sm font-semibold text-gray-800 mb-3">Billing Address</h3>
+              <p class="text-sm text-gray-600">John Doe<br>58 Middle Point Rd<br>San Francisco, 80412<br>United States</p>
+              <a href="#" class="inline-block mt-3 text-sm font-medium text-gray-900 underline hover:no-underline">Edit</a>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-6">
+              <h3 class="text-sm font-semibold text-gray-800 mb-3">Shipping Address</h3>
+              <p class="text-sm text-gray-600">John Doe<br>58 Middle Point Rd<br>San Francisco, 80412<br>United States</p>
+              <a href="#" class="inline-block mt-3 text-sm font-medium text-gray-900 underline hover:no-underline">Edit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Account Details -->
+        <div id="details">
+          <h2 class="text-lg font-semibold text-gray-900 mb-4">Account Details</h2>
+          <form class="space-y-6 max-w-xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="flex flex-col">
+                <label class="mb-2 text-sm font-medium text-gray-700">First Name</label>
+                <input type="text" value="John" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
+              </div>
+              <div class="flex flex-col">
+                <label class="mb-2 text-sm font-medium text-gray-700">Last Name</label>
+                <input type="text" value="Doe" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label class="mb-2 text-sm font-medium text-gray-700">Email</label>
+              <input type="email" value="john.doe@example.com" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
+            </div>
+            <button type="submit" class="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 px-8 uppercase tracking-wide transition">
+              Save Changes
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3f3e4b] text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Logo/logo white.svg" alt="Moon">
+          </div>
+          <p class="max-w-md text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 border border-gray-400 px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#3f3e4b] transition">
+            Get Started
+            <span>→</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">About Us</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Mission</a></li>
+              <li><a href="#" class="hover:text-white">Our team</a></li>
+              <li><a href="#" class="hover:text-white">Awards</a></li>
+              <li><a href="#" class="hover:text-white">Testimonials</a></li>
+              <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Services</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Web design</a></li>
+              <li><a href="#" class="hover:text-white">Web development</a></li>
+              <li><a href="#" class="hover:text-white">Mobile design</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX design</a></li>
+              <li><a href="#" class="hover:text-white">Branding design</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Portfolio</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Corporate websites</a></li>
+              <li><a href="#" class="hover:text-white">E-commerce</a></li>
+              <li><a href="#" class="hover:text-white">Mobile apps</a></li>
+              <li><a href="#" class="hover:text-white">Landing pages</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-500/40"></div>
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-400">
+      Copyright © 2023 Moon | All Rights Reserved |
+      <a href="#" class="hover:text-white underline underline-offset-2">Terms and Conditions</a>
+      |
+      <a href="#" class="hover:text-white underline underline-offset-2">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>

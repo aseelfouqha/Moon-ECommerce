@@ -17,15 +17,18 @@
 
     <!--Menu-->
     <nav class="hidden md:flex gap-8 text-sm text-gray-600">
-      <a href="#" class="hover:text-black">Home</a>
+      <a href="index.html" class="text-black font-medium">Home</a>
       <a href="shop.html" class="hover:text-black">Shop</a>
       <a href="About.html" class="hover:text-black">About</a>
-      <a href="#" class="hover:text-black">Contact</a>
+      <a href="Contact.html" class="hover:text-black">Contact</a>
     </nav>
 
     <!--Icons-->
     <div class="flex gap-4 text-gray-600">
       <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg"></a>
+      <a class="hover:text-black" href="account.html"><img src="assets/Icons/Avatar.svg"></a>
+      <a class="hover:text-black" href="wishlist.html"><img src="assets/Icons/Heart.svg"></a>
+      <a class="hover:text-black" href="cart.html"><img src="assets/Icons/Shopping cart.svg"></a>
       <a class="hover:text-black" href="account.html"><img src="assets/Icons/Avatar.svg"></a>
       <a class="hover:text-black" href="wishlist.html"><img src="assets/Icons/Heart.svg"></a>
       <a class="hover:text-black" href="cart.html"><img src="assets/Icons/Shopping cart.svg"></a>
@@ -41,17 +44,30 @@
     style="background-image: url('./assets/Images/hero\ section.webp');"
   ></div>
 
+<section class="md:relative md:h-[600px] flex flex-col md:block">
+
+    <!-- HERO IMAGE -->
+  <div
+    class="h-[400px] md:h-full bg-cover bg-center"
+    style="background-image: url('./assets/Images/hero\ section.webp');"
+  ></div>
+
 
   <!-- Offer Panel -->
   <div
     class="md:absolute md:top-0 md:left-[165px]
            md:h-full w-full md:w-[360px]
            bg-[#8b776b] text-white flex items-center justify-center"
+    class="md:absolute md:top-0 md:left-[165px]
+           md:h-full w-full md:w-[360px]
+           bg-[#8b776b] text-white flex items-center justify-center"
   >
+    <div class="px-10 py-10 w-full text-center">
     <div class="px-10 py-10 w-full text-center">
 
       <div class="flex justify-center mb-6">
         <div class="w-14 h-14 flex items-center justify-center">
+          <img src="assets/Logo/Icon.svg" alt="icon">
           <img src="assets/Logo/Icon.svg" alt="icon">
         </div>
       </div>
@@ -64,6 +80,11 @@
         BAT TRANG <br /> DINNER SET
       </h1>
 
+      <button
+        class="bg-white text-black px-8 py-3 text-sm
+               hover:bg-black hover:text-white
+               transition-colors duration-300"
+      >
       <button
         class="bg-white text-black px-8 py-3 text-sm
                hover:bg-black hover:text-white
@@ -85,12 +106,14 @@
     <div class="group cursor-pointer place-items-center">
       <img src="assets/Images/Tableware.webp" alt="Tableware"
            class="w-50 h-50 object-cover  mb-4">
+           class="w-50 h-50 object-cover  mb-4">
       <p class="text-sm font-semibold tracking-wide">TABLEWARE</p>
     </div>
 
     <!-- Card 2 -->
     <div class="group cursor-pointer place-items-center">
       <img src="assets/Images/Home Decor.webp" alt="Home Decor"
+           class="w-50 h-50 object-cover  mb-4">
            class="w-50 h-50 object-cover  mb-4">
       <p class="text-sm font-semibold tracking-wide">HOME DECOR</p>
     </div>
@@ -99,12 +122,14 @@
     <div class="group cursor-pointer place-items-center">
       <img src="assets/Images/Holidays.webp" alt="Holiday"
            class="w-50 h-50 object-cover  mb-4">
+           class="w-50 h-50 object-cover  mb-4">
       <p class="text-sm font-semibold tracking-wide">HOLIDAY</p>
     </div>
 
     <!-- Card 4 -->
     <div class="group cursor-pointer place-items-center">
       <img src="assets/Images/Collection.webp" alt="Collection"
+           class="w-50 h-50 object-cover mb-4">
            class="w-50 h-50 object-cover mb-4">
       <p class="text-sm font-semibold tracking-wide">COLLECTION</p>
     </div>
@@ -114,6 +139,7 @@
 
 <!--Promo Section-->
 <section class="max-w-7xl mx-auto px-6 py-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50  overflow-hidden">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50  overflow-hidden">
 
     <!-- Left Content -->
@@ -157,7 +183,9 @@
     
     <!-- Product Card -->
     <div class="text-left">
+    <div class="text-left">
       <img
+        src="assets/Images/mercer-grey-bowl.webp"
         src="assets/Images/mercer-grey-bowl.webp"
         alt="Small Ecru Ceramic Compote"
         class="mb-6 w-full object-cover"
@@ -177,6 +205,7 @@
     </div>
 
     <!-- Product Card -->
+    <div class="text-left">
     <div class="text-left">
       <img
         src="assets/Images/WARRICK.webp"
@@ -199,6 +228,7 @@
 
     <!-- Product Card -->
     <div class="text-left">
+    <div class="text-left">
       <img
         src="assets/Images/PORCELAIN.webp"
         alt="Porcelain Dinner Plate"
@@ -220,6 +250,7 @@
 
     <!-- Product Card -->
     <div class="text-left">
+    <div class="text-left">
       <img
         src="assets/Images/white werrick vase.webp"
         alt="Warrick White Vase 20"
@@ -239,6 +270,7 @@
       </button>
     </div>
     <!-- Product Card -->
+    <div class="text-left">
     <div class="text-left">
       <img
         src="assets/Images/Rounded.webp"
@@ -260,6 +292,7 @@
     </div>
     <!-- Product Card -->
     <div class="text-left">
+    <div class="text-left">
       <img
         src="assets/Images/Marin.webp"
         alt="Marin white dinner Plate"
@@ -280,6 +313,7 @@
     </div>
     <!-- Product Card -->
     <div class="text-left">
+    <div class="text-left">
       <img
         src="assets/Images/TALL.webp"
         alt="Tall cream ceramic vase"
@@ -299,6 +333,7 @@
       </button>
     </div>
     <!-- Product Card -->
+    <div class="text-left">
     <div class="text-left">
       <img
         src="assets/Images/LUANA.webp"
@@ -336,6 +371,7 @@
           Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
         </p>
         <a class="text-sm tracking-widest font-normal border-b border-gray-800 hover:font-bold">
+        <a class="text-sm tracking-widest font-normal border-b border-gray-800 hover:font-bold">
           LEAR MORE
         </a>
       </div>
@@ -368,6 +404,7 @@
         <p class="text-gray-500 mb-8">
           Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis sit aliquam sit.
         </p>
+        <a class="text-sm tracking-widest font-normal border-b border-gray-800 hover:font-bold">
         <a class="text-sm tracking-widest font-normal border-b border-gray-800 hover:font-bold">
           LEAR MORE
         </a>

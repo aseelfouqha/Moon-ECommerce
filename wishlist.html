@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Wishlist - Moon</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-10 py-6">
+    <a href="index.html" class="flex items-center gap-2 font-semibold text-lg">
+      <img src="assets/Logo/logo (1).svg" alt="Moon">
+    </a>
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="index.html" class="hover:text-black">Home</a>
+      <a href="shop.html" class="hover:text-black">Shop</a>
+      <a href="About.html" class="hover:text-black">About</a>
+      <a href="Contact.html" class="hover:text-black">Contact</a>
+    </nav>
+    <div class="flex gap-4 text-gray-600">
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg" alt="Search"></a>
+      <a class="hover:text-black" href="account.html"><img src="assets/Icons/Avatar.svg" alt="Account"></a>
+      <a class="hover:text-black" href="wishlist.html"><img src="assets/Icons/Heart.svg" alt="Wishlist"></a>
+      <a class="hover:text-black" href="cart.html"><img src="assets/Icons/Shopping cart.svg" alt="Cart"></a>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="text-sm text-gray-500">
+      <a href="index.html" class="hover:text-gray-800">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 font-medium">Wishlist</span>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <section class="max-w-7xl mx-auto px-6 py-12 pb-20">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">Wishlist (3 items)</h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      
+      <!-- Wishlist Items -->
+      <div class="lg:col-span-2">
+        <!-- Table Header -->
+        <div class="hidden md:grid md:grid-cols-[auto_80px_1fr_80px_1fr] md:gap-4 py-4 bg-gray-100 px-4 text-gray-600 text-xs font-semibold uppercase tracking-wide items-center">
+          <div class="w-6"></div>
+          <div>Photo</div>
+          <div>Product</div>
+          <div>Price</div>
+          <div class="text-right">Action</div>
+        </div>
+
+        <!-- Wishlist Item 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-[auto_80px_1fr_80px_1fr] md:gap-4 md:items-center py-6 border-b border-gray-200 gap-3">
+          <button class="w-6 h-6 text-red-500 hover:text-red-700 transition md:place-self-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+          <a href="product.html" class="w-20 h-20 md:w-16 md:h-16 flex-shrink-0 bg-gray-100 rounded overflow-hidden">
+            <img src="assets/Images/porcline.webp" alt="Porcelain Dinner Plate" class="w-full h-full object-contain p-2">
+          </a>
+          <div>
+            <a href="product.html" class="text-sm font-semibold text-gray-800 uppercase hover:underline">Porcelain Dinner Plate (27cm)</a>
+          </div>
+          <div class="text-sm font-medium text-gray-700">$59</div>
+          <div class="md:text-right">
+            <a href="cart.html" class="inline-block border border-gray-700 py-2 px-4 text-xs tracking-widest hover:bg-gray-900 hover:text-white transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Wishlist Item 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-[auto_80px_1fr_80px_1fr] md:gap-4 md:items-center py-6 border-b border-gray-200 gap-3">
+          <button class="w-6 h-6 text-red-500 hover:text-red-700 transition md:place-self-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+          <a href="product.html" class="w-20 h-20 md:w-16 md:h-16 flex-shrink-0 bg-gray-100 rounded overflow-hidden">
+            <img src="assets/Images/valo-matte-white-vase.webp" alt="Ophelia Matte Natural Vase" class="w-full h-full object-contain p-2">
+          </a>
+          <div>
+            <a href="product.html" class="text-sm font-semibold text-gray-800 uppercase hover:underline">Ophelia Matte Natural Vase</a>
+          </div>
+          <div class="text-sm font-medium text-gray-700">$168</div>
+          <div class="md:text-right">
+            <a href="cart.html" class="inline-block border border-gray-700 py-2 px-4 text-xs tracking-widest hover:bg-gray-900 hover:text-white transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Wishlist Item 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-[auto_80px_1fr_80px_1fr] md:gap-4 md:items-center py-6 border-b border-gray-200 gap-3">
+          <button class="w-6 h-6 text-red-500 hover:text-red-700 transition md:place-self-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+          <a href="product.html" class="w-20 h-20 md:w-16 md:h-16 flex-shrink-0 bg-gray-100 rounded overflow-hidden">
+            <img src="assets/Images/mercer-black-rim-bowl.webp" alt="Luana Bowl" class="w-full h-full object-contain p-2">
+          </a>
+          <div>
+            <a href="product.html" class="text-sm font-semibold text-gray-800 uppercase hover:underline">Luana Bowl</a>
+          </div>
+          <div class="text-sm font-medium text-gray-700">$49</div>
+          <div class="md:text-right">
+            <a href="cart.html" class="inline-block border border-gray-700 py-2 px-4 text-xs tracking-widest hover:bg-gray-900 hover:text-white transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pt-8">
+          <a href="shop.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 underline">
+            Continue Shopping
+          </a>
+          <a href="cart.html" class="inline-block px-8 py-3 bg-gray-800 text-white text-sm font-semibold uppercase tracking-wide hover:bg-gray-900 transition">
+            View Cart
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Summary -->
+      <div class="lg:col-span-1">
+        <div class="bg-[#3f3e4b] text-white rounded-lg p-6 sticky top-8">
+          <h3 class="text-lg font-semibold mb-6">Wishlist Summary</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-300">Items</span>
+              <span class="font-medium">3</span>
+            </div>
+            <div class="flex justify-between pt-4 border-t border-gray-500/40">
+              <span class="text-gray-300">Subtotal</span>
+              <span class="font-bold text-[#C4A484]">$276.00</span>
+            </div>
+          </div>
+          <a href="cart.html" class="mt-6 w-full inline-block text-center border-2 border-white py-4 text-sm font-semibold uppercase tracking-wide hover:bg-white hover:text-[#3f3e4b] transition">
+            Add All to Cart
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3f3e4b] text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Logo/logo white.svg" alt="Moon">
+          </div>
+          <p class="max-w-md text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 border border-gray-400 px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#3f3e4b] transition">
+            Get Started
+            <span>→</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">About Us</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Mission</a></li>
+              <li><a href="#" class="hover:text-white">Our team</a></li>
+              <li><a href="#" class="hover:text-white">Awards</a></li>
+              <li><a href="#" class="hover:text-white">Testimonials</a></li>
+              <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Services</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Web design</a></li>
+              <li><a href="#" class="hover:text-white">Web development</a></li>
+              <li><a href="#" class="hover:text-white">Mobile design</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX design</a></li>
+              <li><a href="#" class="hover:text-white">Branding design</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Portfolio</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Corporate websites</a></li>
+              <li><a href="#" class="hover:text-white">E-commerce</a></li>
+              <li><a href="#" class="hover:text-white">Mobile apps</a></li>
+              <li><a href="#" class="hover:text-white">Landing pages</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-500/40"></div>
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-400">
+      Copyright © 2023 Moon | All Rights Reserved |
+      <a href="#" class="hover:text-white underline underline-offset-2">Terms and Conditions</a>
+      |
+      <a href="#" class="hover:text-white underline underline-offset-2">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>

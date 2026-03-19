@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Sign In - Moon</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-10 py-6">
+    <a href="index.html" class="flex items-center gap-2 font-semibold text-lg">
+      <img src="assets/Logo/logo (1).svg" alt="Moon">
+    </a>
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="index.html" class="hover:text-black">Home</a>
+      <a href="shop.html" class="hover:text-black">Shop</a>
+      <a href="About.html" class="hover:text-black">About</a>
+      <a href="Contact.html" class="hover:text-black">Contact</a>
+    </nav>
+    <div class="flex gap-4 text-gray-600">
+      <a class="hover:text-black" href="#"><img src="assets/Icons/Search.svg" alt="Search"></a>
+      <a class="hover:text-black" href="account.html"><img src="assets/Icons/Avatar.svg" alt="Account"></a>
+      <a class="hover:text-black" href="wishlist.html"><img src="assets/Icons/Heart.svg" alt="Wishlist"></a>
+      <a class="hover:text-black" href="cart.html"><img src="assets/Icons/Shopping cart.svg" alt="Cart"></a>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="text-sm text-gray-500">
+      <a href="index.html" class="hover:text-gray-800">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 font-medium">Sign In</span>
+    </nav>
+  </div>
+
+  <!-- Sign In Form -->
+  <section class="max-w-md mx-auto px-6 py-16">
+    <h1 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Sign In</h1>
+    <form class="space-y-6">
+      <div class="flex flex-col">
+        <label class="mb-2 text-sm font-medium text-gray-700">Email</label>
+        <input type="email" placeholder="example@youremail.com" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" required>
+      </div>
+      <div class="flex flex-col">
+        <label class="mb-2 text-sm font-medium text-gray-700">Password</label>
+        <input type="password" placeholder="••••••••" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent" required>
+      </div>
+      <div class="flex items-center justify-between">
+        <label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600">
+          <input type="checkbox" class="rounded border-gray-400">
+          Remember me
+        </label>
+        <a href="#" class="text-sm text-gray-600 hover:text-gray-900 underline">Forgot password?</a>
+      </div>
+      <button type="submit" class="w-full bg-gray-900 hover:bg-gray-800 text-white font-semibold py-4 uppercase tracking-wide transition">
+        Sign In
+      </button>
+    </form>
+    <p class="mt-8 text-center text-sm text-gray-600">
+      Don't have an account?
+      <a href="signup.html" class="font-medium text-gray-900 underline hover:no-underline">Sign up</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3f3e4b] text-gray-300 mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Logo/logo white.svg" alt="Moon">
+          </div>
+          <p class="max-w-md text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 border border-gray-400 px-6 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#3f3e4b] transition">
+            Get Started
+            <span>→</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">About Us</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Mission</a></li>
+              <li><a href="#" class="hover:text-white">Our team</a></li>
+              <li><a href="#" class="hover:text-white">Awards</a></li>
+              <li><a href="#" class="hover:text-white">Testimonials</a></li>
+              <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Services</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Web design</a></li>
+              <li><a href="#" class="hover:text-white">Web development</a></li>
+              <li><a href="#" class="hover:text-white">Mobile design</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX design</a></li>
+              <li><a href="#" class="hover:text-white">Branding design</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 text-sm font-semibold text-white uppercase">Portfolio</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-white">Corporate websites</a></li>
+              <li><a href="#" class="hover:text-white">E-commerce</a></li>
+              <li><a href="#" class="hover:text-white">Mobile apps</a></li>
+              <li><a href="#" class="hover:text-white">Landing pages</a></li>
+              <li><a href="#" class="hover:text-white">UI/UX projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-500/40"></div>
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-400">
+      Copyright © 2023 Moon | All Rights Reserved |
+      <a href="#" class="hover:text-white underline underline-offset-2">Terms and Conditions</a>
+      |
+      <a href="#" class="hover:text-white underline underline-offset-2">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
